@@ -318,7 +318,7 @@ nav {
 }
 
 .Footer {
-  background-image: url("/assets/img/illustrations/BOTTOM.png") !important;
+  background-image: url("../img/illustrations/BOTTOM.png") !important;
   width: 100%;
   top: 200px;
   position: relative !important;
