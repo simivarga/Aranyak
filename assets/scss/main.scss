@@ -17,10 +17,9 @@ body {
 	overflow-x: hidden;
     
 }
-body {
-  overflow-x: hidden;
+html {
+  scroll-padding-top: 140px !important;
 }
-
 .row{
       --bs-gutter-x: 0rem !important;
 }
@@ -70,7 +69,23 @@ nav {
   transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
   z-index: 1000;
 }
-
+.navbar-toggler{
+  border-color: transparent !important;
+}
+.navbar-toggler:focus{
+  border:none !important;
+  box-shadow: none !important;
+}
+.navbar-light .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23124838' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E") !important;
+}
+.custom-navbar{
+  background-color: $primary !important;
+}
+.navbar-nav{
+  align-items: left !important;
+  justify-content: start !important;
+}
 
 /* Styles for the fixed navbar */
 .navbar-fixed {
@@ -265,6 +280,75 @@ nav {
 }
 .slider-nav .prev-button-1, .slider-nav .prev-button-2, .slider-nav .prev-button-3 {
   left: 0% !important;
+}
+
+.email-input {
+  padding: 12px 25px !important;
+  border-radius: 40px !important;
+  border: 2px solid rgba(18, 72, 56, .5) !important;
+  color: rgba(18, 72, 56, .5) !important;
+  font-size: 1.25rem !important;
+  outline: none !important;
+}
+
+.submit-button {
+  background: #124838;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border-radius: 50% !important;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+.submit-button:hover, .submit-button:active {
+  color: #124838 !important;
+  background: #fff !important;
+}
+
+.Footer {
+  background-image: url('/assets/img/illustrations/BOTTOM.png') !important;
+  width: 100%;
+  top: 200px;
+  position: relative !important;
+  min-height: 100vh;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Footer .links, .Footer p{
+  color: rgba(255, 255, 255, .7) !important;
+  font-size: 1.4rem !important;
+  line-height: normal !important;
+  font-weight: 500 !important;
+}
+.Footer .links li:hover, .Footer p:hover{
+  color: rgba(255, 255, 255,1) !important;
+  cursor: pointer;
+}
+.media i:hover, .media i:focus{
+  color: #e3a476;
+  cursor: pointer;
+  transition: .3s !important;
+}
+
+.terms-condition .links {
+  display: inline-block;
+  text-align: center;
+  color: rgba(255, 255, 255, .7);
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .terms-condition .links {
+      font-size: 1rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .terms-condition .links {
+      font-size: .8rem !important;
+  }
 }
 @media (min-width: 992px) {
   .slider-nav .prev-button-1, .slider-nav .prev-button-2, .slider-nav .prev-button-3 {
